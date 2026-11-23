@@ -109,6 +109,25 @@ Yes. An interaction F-test rejects constant coefficients at both levels and for 
   - but the model is **systematically ~0.8 pp too optimistic**. Decline sped up after 2020 (birth slump, more deaths, a COVID outflow from Tokyo), which no training period contained.
   - Okinawa started shrinking (−0.1% vs. +1.1% predicted), and Tokyo grew less than predicted (+0.9% vs. +2.0%).
 
+## 5b. Why are fewer babies born? (step 11, `reports/fertility_findings.md`)
+
+**Fewer marriages, not smaller families:**
+- The married share of women 25–39 fell from **84.5% (1980) to 54.0% (2020)**.
+- Births per married woman *rose* 9% over the same period.
+- Age-by-age check, 1980→2005: fewer married women would have cut the fertility rate by 0.80; more births per married woman added back 0.31.
+
+**Marriage is lower where** (robust in both comparisons, between prefectures and within a prefecture over time):
+- unemployment is high (−0.89 / −0.73 pp per SD);
+- homes are small (floor area +1.19 / +1.76).
+
+**Marriage also rises when a prefecture's own income and men's wages rise** (+0.88 and +1.26, within a prefecture).
+
+**Cities have lower fertility,** both overall and per married couple (urban share −0.06 / −0.10 TFR per SD).
+
+**Women's employment** shows no consistent effect.
+
+**Childcare ratios** (nurseries per child, waiting lists) are driven by the number of children themselves (reverse causation), so they can't be read as causes.
+
 ## 6. Limitations
 
 - **Short series:** data starts in 1975, so declines before then (1950s–60s rural exodus) are not visible.
@@ -123,5 +142,6 @@ Yes. An interaction F-test rejects constant coefficients at both levels and for 
 ```sh
 python src/download.py && python src/build_panel.py && python src/eda.py
 python src/select_features.py && python src/models.py && python src/forecast.py && python src/time_varying.py
+python src/fertility.py        # step 11: why fewer births
 python src/build_report.py     # assembles reports/site/index.html
 ```

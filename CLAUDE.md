@@ -35,6 +35,7 @@ python src/select_features.py          # step 7: -> config/selected_features.jso
 python src/models.py                   # step 8a: FE regressions + ANOVA, reads selected_features.json
 python src/forecast.py                 # step 8b: backtests + 2025/2030 forecasts
 python src/time_varying.py             # step 9: per-period Shapley R2, interaction F-tests
+python src/fertility.py                # step 11: why fewer births (marriage vs. marital fertility, themes); needs the 'fertility' rows in config/variables.csv
 python src/build_report.py             # step 10: reports/site/index.html from src/report_template.html
 python src/make_colab_notebook.py      # notebooks/depopulation_japan_colab.ipynb: self-contained Colab version (rerun after changing src/)
 ```

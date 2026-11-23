@@ -15,7 +15,7 @@ import nbformat as nbf
 from estat import ROOT
 
 SRC_FILES = ["estat.py", "download.py", "geo.py", "build_panel.py", "plotstyle.py", "eda.py", "features.py",
-             "select_features.py", "models.py", "forecast.py", "time_varying.py", "build_report.py",
+             "select_features.py", "models.py", "forecast.py", "time_varying.py", "fertility.py", "build_report.py",
              "report_template.html"]
 
 
@@ -159,6 +159,16 @@ naive persistence; then forecasts from 2020, checked against the official 2024 p
         code("run('time_varying.py', quiet=True)"),
         code(show_figs("18_shapley_by_period_pref", "19_coef_paths_pref_social", "20_shapley_by_period_muni")),
         code(show_md("reports/time_varying.md")),
+        md("""
+## Step 11: why are fewer babies born?
+
+Splits the fall in births into fewer marriages vs. fewer children per married woman, then links fertility,
+marriage and births per married woman to economic, housing, childcare, women's-work and urban variables.
+"""),
+        code("run('fertility.py', quiet=True)"),
+        code(show_figs("21_fertility_marriage_index", "22_fertility_themes", "23_fertility_coefficients",
+                       "24_fertility_vs_marriage_2020")),
+        code(show_md("reports/fertility.md")),
         md("""
 ## Step 10: report page and downloads
 
