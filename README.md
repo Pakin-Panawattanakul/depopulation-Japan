@@ -24,5 +24,7 @@ Dataset from e-stat.go.jp: Social and Demographic Statistics System (SSDS), Stat
 2. Add your e-Stat key as a Colab secret: key icon on the left → name `ESTAT_APP_ID` → turn on *Notebook access*
 3. Runtime → Run all (under a minute)
 
-To run on your own computer instead: `pip install -r requirements.txt`, and in the first code cell
-replace `userdata.get("ESTAT_APP_ID")` with your key (don't commit it).
+To run on your own computer instead (Jupyter):
+1. Put your key in a file named `.env` in this folder: `ESTAT_APP_ID=your_key` (it is git-ignored)
+2. `source .venv/bin/activate` (first time: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`)
+3. `jupyter lab`, open `population_decline.ipynb`, choose the kernel "Python (depopulation-Japan)", Run → Run All Cells
