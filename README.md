@@ -16,6 +16,7 @@ Dataset from e-stat.go.jp: Social and Demographic Statistics System (SSDS), Stat
 1. **Get and prepare the data**: download from the e-Stat API, combine, calculate rates, regions, 5-year table
 2. **Feature selection**: correlation, random forest and Lasso, compared on a 2010–2020 test
    - **2b. Changing factors**: correlation per period (~30, 20, 10 years ago and now)
+   - **2c. Is the link real?**: regression with other factors held fixed, and within each prefecture over time
 3. **ANOVA**: one-way by region (7 steps from class) and repeated measures over periods
 4. **Prediction**: naive, linear regression and random forest, 5 and 10 years ahead; forecast to 2025 and 2030
 

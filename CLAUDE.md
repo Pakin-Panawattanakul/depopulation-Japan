@@ -12,7 +12,7 @@ The whole project is **one notebook, `population_decline.ipynb`**, written to ru
 
 - Run in Colab: the e-Stat key is a Colab secret `ESTAT_APP_ID`, read with `google.colab.userdata`. Never hard-code or commit the key (a local `.env` holds it and is git-ignored).
 - Locally (Jupyter): `source .venv/bin/activate && jupyter lab`, kernel "Python (depopulation-Japan)". The first cell tries `google.colab.userdata` and falls back to reading `ESTAT_APP_ID=` from `.env`, so the same notebook runs in both places. Run it from the repo folder (it reads `.env` and writes its CSVs there).
-- Sections: 1 data, 2 feature selection (+ 2b changing factors), 3 ANOVA, 4 prediction.
+- Sections: 1 data, 2 feature selection (+ 2b changing factors, 2c "is the link real?" regression checks), 3 ANOVA, 4 prediction.
 
 ## Working style for this repo (important)
 
