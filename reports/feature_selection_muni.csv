@@ -1,0 +1,17 @@
+feature,label,lasso_coef,stability,rf_importance,vif,spearman,level,target,n_obs,lasso_cv_r2,rf_cv_r2,selected
+aging_rate,Aging rate (65+ %),-2.335,1.0,1.842,2.374,-0.936,muni,natural,7226,0.868,0.886,True
+unemployment_rate,Unemployment rate,-0.177,1.0,0.018,1.177,0.168,muni,natural,7226,0.868,0.886,True
+did_share,Urban share (DID %),0.294,1.0,0.007,2.828,0.586,muni,natural,7226,0.868,0.886,True
+log_population,Population size (log),-0.151,1.0,0.008,2.653,0.615,muni,natural,7226,0.868,0.886,True
+log_dist_metro,Distance to nearest metro (log),0.216,1.0,0.03,1.714,-0.276,muni,natural,7226,0.868,0.886,True
+doctors_per_1k,Doctors per 1k,0.084,1.0,0.008,1.118,0.241,muni,natural,7226,0.868,0.886,True
+fiscal_strength,Fiscal strength index,0.08,0.98,0.006,2.771,0.722,muni,natural,7226,0.868,0.886,True
+income_rel,Income per taxpayer (Japan=100),0.012,0.807,0.002,2.585,0.653,muni,natural,7226,0.868,0.886,True
+aging_rate,Aging rate (65+ %),-0.757,1.0,0.15,2.374,-0.517,muni,social,7226,0.202,0.261,True
+fiscal_strength,Fiscal strength index,0.74,1.0,0.291,2.771,0.525,muni,social,7226,0.202,0.261,True
+income_rel,Income per taxpayer (Japan=100),0.253,0.993,0.042,2.585,0.395,muni,social,7226,0.202,0.261,True
+log_population,Population size (log),0.219,0.99,0.018,2.653,0.42,muni,social,7226,0.202,0.261,True
+did_share,Urban share (DID %),-0.169,0.97,0.057,2.828,0.34,muni,social,7226,0.202,0.261,True
+doctors_per_1k,Doctors per 1k,0.039,0.857,0.005,1.118,0.164,muni,social,7226,0.202,0.261,True
+unemployment_rate,Unemployment rate,0.0,0.807,0.024,1.177,0.123,muni,social,7226,0.202,0.261,True
+log_dist_metro,Distance to nearest metro (log),0.0,0.76,0.08,1.714,-0.283,muni,social,7226,0.202,0.261,True

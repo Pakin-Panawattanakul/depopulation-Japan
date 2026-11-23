@@ -1,0 +1,21 @@
+feature,label,lasso_coef,stability,rf_importance,vif,spearman,level,target,n_obs,lasso_cv_r2,rf_cv_r2,selected
+aging_rate,Aging rate (65+ %),-2.205,1.0,1.674,6.374,-0.94,muni_extra,natural,2766,0.891,0.899,True
+did_share,Urban share (DID %),0.306,1.0,0.012,2.518,0.608,muni_extra,natural,2766,0.891,0.899,True
+working_women_share,Women 15–64 (% of pop.),-0.277,1.0,0.001,5.68,0.804,muni_extra,natural,2766,0.891,0.899,False
+log_dist_metro,Distance to nearest metro (log),0.181,1.0,0.017,1.794,-0.306,muni_extra,natural,2766,0.891,0.899,True
+income_rel,Income per taxpayer (Japan=100),0.096,0.993,0.003,3.792,0.701,muni_extra,natural,2766,0.891,0.899,True
+log_population,Population size (log),-0.058,0.99,0.003,1.798,0.504,muni_extra,natural,2766,0.891,0.899,True
+doctors_per_1k,Doctors per 1k,0.047,0.983,0.009,1.072,0.093,muni_extra,natural,2766,0.891,0.899,True
+unemployment_rate,Unemployment rate,-0.047,0.977,0.004,1.283,-0.051,muni_extra,natural,2766,0.891,0.899,True
+vacancy_rate,Vacant housing (%),0.006,0.797,-0.0,1.334,-0.351,muni_extra,natural,2766,0.891,0.899,True
+fiscal_strength,Fiscal strength index,0.0,0.703,0.003,3.821,0.721,muni_extra,natural,2766,0.891,0.899,False
+aging_rate,Aging rate (65+ %),-0.9,1.0,0.27,6.374,-0.606,muni_extra,social,2766,0.343,0.384,True
+income_rel,Income per taxpayer (Japan=100),0.404,1.0,0.052,3.792,0.541,muni_extra,social,2766,0.343,0.384,True
+fiscal_strength,Fiscal strength index,0.469,1.0,0.172,3.821,0.593,muni_extra,social,2766,0.343,0.384,True
+log_dist_metro,Distance to nearest metro (log),0.207,0.993,0.062,1.794,-0.287,muni_extra,social,2766,0.343,0.384,True
+log_population,Population size (log),0.118,0.967,0.015,1.798,0.431,muni_extra,social,2766,0.343,0.384,True
+unemployment_rate,Unemployment rate,-0.067,0.887,0.004,1.283,-0.085,muni_extra,social,2766,0.343,0.384,True
+doctors_per_1k,Doctors per 1k,0.015,0.803,0.005,1.072,0.077,muni_extra,social,2766,0.343,0.384,True
+did_share,Urban share (DID %),-0.024,0.803,0.005,2.518,0.426,muni_extra,social,2766,0.343,0.384,True
+vacancy_rate,Vacant housing (%),-0.004,0.8,0.009,1.334,-0.251,muni_extra,social,2766,0.343,0.384,False
+working_women_share,Women 15–64 (% of pop.),-0.0,0.573,0.01,5.68,0.537,muni_extra,social,2766,0.343,0.384,False

@@ -1,0 +1,37 @@
+feature,label,lasso_coef,stability,rf_importance,vif,spearman,level,target,n_obs,lasso_cv_r2,rf_cv_r2,selected
+aging_rate,Aging rate (65+ %),-0.587,1.0,0.734,20.115,-0.932,pref_post2000,natural,186,0.945,0.798,True
+tfr,Total fertility rate,0.421,1.0,0.057,4.269,-0.204,pref_post2000,natural,186,0.945,0.798,True
+young_women_share,Women 20–39 (% of pop.),0.308,0.993,0.323,28.498,0.912,pref_post2000,natural,186,0.945,0.798,False
+vacancy_rate,Vacant housing (%),-0.058,0.987,0.002,1.902,-0.232,pref_post2000,natural,186,0.945,0.798,True
+hs_grads_jobs_other_pref,HS grads taking jobs elsewhere (%),-0.053,0.95,0.001,3.285,-0.341,pref_post2000,natural,186,0.945,0.798,True
+income_rel,Income per taxpayer (Japan=100),0.076,0.913,-0.002,12.144,0.737,pref_post2000,natural,186,0.945,0.798,True
+did_share,Urban share (DID %),0.104,0.913,0.0,14.241,0.658,pref_post2000,natural,186,0.945,0.798,True
+snow_days_5y,Snow days per year,-0.039,0.88,0.004,3.164,-0.327,pref_post2000,natural,186,0.945,0.798,True
+univ_outflow_share,Univ. entrants leaving pref. (%),-0.015,0.703,0.0,5.901,-0.481,pref_post2000,natural,186,0.945,0.798,True
+unemployment_rate,Unemployment rate,-0.0,0.547,-0.0,4.086,-0.035,pref_post2000,natural,186,0.945,0.798,False
+unmarried_f_30_34_rate,Unmarried women 30–34 (%),0.01,0.497,0.0,4.844,0.186,pref_post2000,natural,186,0.945,0.798,False
+doctors_per_100k,Doctors per 100k,0.0,0.41,0.001,4.486,-0.166,pref_post2000,natural,186,0.945,0.798,False
+univ_capacity_index,University capacity index,0.0,0.35,-0.001,6.615,0.557,pref_post2000,natural,186,0.945,0.798,False
+log_dist_metro,Distance to nearest metro (log),0.008,0.26,0.001,4.563,-0.478,pref_post2000,natural,186,0.945,0.798,False
+log_population,Population size (log),-0.0,0.253,0.005,15.008,0.643,pref_post2000,natural,186,0.945,0.798,False
+job_openings_ratio,Job-openings ratio,-0.0,0.25,-0.0,2.606,0.121,pref_post2000,natural,186,0.945,0.798,False
+log_land_price_rel,"Land price (log, rel.)",0.0,0.163,0.006,14.163,0.732,pref_post2000,natural,186,0.945,0.798,False
+fiscal_strength,Fiscal strength index,-0.0,0.063,0.003,17.966,0.743,pref_post2000,natural,186,0.945,0.798,False
+job_openings_ratio,Job-openings ratio,0.158,0.96,0.008,2.606,0.294,pref_post2000,social,186,0.596,0.49,True
+vacancy_rate,Vacant housing (%),-0.1,0.893,0.004,1.902,-0.158,pref_post2000,social,186,0.596,0.49,True
+snow_days_5y,Snow days per year,-0.096,0.883,0.009,3.164,-0.263,pref_post2000,social,186,0.596,0.49,True
+fiscal_strength,Fiscal strength index,0.368,0.857,0.185,17.966,0.739,pref_post2000,social,186,0.596,0.49,True
+univ_capacity_index,University capacity index,0.123,0.76,-0.014,6.615,0.506,pref_post2000,social,186,0.596,0.49,True
+aging_rate,Aging rate (65+ %),-0.123,0.72,0.09,20.115,-0.74,pref_post2000,social,186,0.596,0.49,True
+young_women_share,Women 20–39 (% of pop.),0.216,0.697,0.006,28.498,0.756,pref_post2000,social,186,0.596,0.49,False
+unmarried_f_30_34_rate,Unmarried women 30–34 (%),0.036,0.567,-0.014,4.844,0.141,pref_post2000,social,186,0.596,0.49,False
+income_rel,Income per taxpayer (Japan=100),0.066,0.53,-0.008,12.144,0.686,pref_post2000,social,186,0.596,0.49,False
+unemployment_rate,Unemployment rate,-0.0,0.527,0.001,4.086,-0.131,pref_post2000,social,186,0.596,0.49,False
+hs_grads_jobs_other_pref,HS grads taking jobs elsewhere (%),-0.0,0.49,-0.005,3.285,-0.467,pref_post2000,social,186,0.596,0.49,False
+log_population,Population size (log),0.0,0.323,-0.007,15.008,0.605,pref_post2000,social,186,0.596,0.49,False
+doctors_per_100k,Doctors per 100k,0.0,0.303,-0.003,4.486,-0.102,pref_post2000,social,186,0.596,0.49,False
+tfr,Total fertility rate,0.0,0.287,-0.004,4.269,-0.301,pref_post2000,social,186,0.596,0.49,False
+log_dist_metro,Distance to nearest metro (log),0.0,0.267,-0.007,4.563,-0.485,pref_post2000,social,186,0.596,0.49,False
+univ_outflow_share,Univ. entrants leaving pref. (%),0.0,0.213,0.006,5.901,-0.414,pref_post2000,social,186,0.596,0.49,False
+log_land_price_rel,"Land price (log, rel.)",0.0,0.15,-0.015,14.163,0.654,pref_post2000,social,186,0.596,0.49,False
+did_share,Urban share (DID %),-0.0,0.063,-0.009,14.241,0.523,pref_post2000,social,186,0.596,0.49,False

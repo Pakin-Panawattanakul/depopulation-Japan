@@ -1,0 +1,85 @@
+{
+ "pref": {
+  "natural": [
+   "aging_rate",
+   "tfr",
+   "vacancy_rate",
+   "hs_grads_jobs_other_pref",
+   "income_rel",
+   "job_openings_ratio",
+   "unmarried_f_30_34_rate",
+   "snow_days_5y"
+  ],
+  "social": [
+   "job_openings_ratio",
+   "income_rel",
+   "aging_rate",
+   "unemployment_rate",
+   "snow_days_5y"
+  ]
+ },
+ "pref_post2000": {
+  "natural": [
+   "aging_rate",
+   "tfr",
+   "vacancy_rate",
+   "hs_grads_jobs_other_pref",
+   "income_rel",
+   "did_share",
+   "snow_days_5y",
+   "univ_outflow_share"
+  ],
+  "social": [
+   "job_openings_ratio",
+   "vacancy_rate",
+   "snow_days_5y",
+   "fiscal_strength",
+   "univ_capacity_index",
+   "aging_rate"
+  ]
+ },
+ "muni": {
+  "natural": [
+   "aging_rate",
+   "unemployment_rate",
+   "did_share",
+   "log_population",
+   "log_dist_metro",
+   "doctors_per_1k",
+   "fiscal_strength",
+   "income_rel"
+  ],
+  "social": [
+   "aging_rate",
+   "fiscal_strength",
+   "income_rel",
+   "log_population",
+   "did_share",
+   "doctors_per_1k",
+   "unemployment_rate",
+   "log_dist_metro"
+  ]
+ },
+ "muni_extra": {
+  "natural": [
+   "aging_rate",
+   "did_share",
+   "log_dist_metro",
+   "income_rel",
+   "log_population",
+   "doctors_per_1k",
+   "unemployment_rate",
+   "vacancy_rate"
+  ],
+  "social": [
+   "aging_rate",
+   "income_rel",
+   "fiscal_strength",
+   "log_dist_metro",
+   "log_population",
+   "unemployment_rate",
+   "doctors_per_1k",
+   "did_share"
+  ]
+ }
+}
