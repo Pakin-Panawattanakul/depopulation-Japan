@@ -29,7 +29,16 @@ No lint or test setup exists yet.
 ```sh
 python src/download.py                 # step 4: fetch SSDS variables -> data/raw/ssds_{pref,muni}.parquet
 python src/download.py --level pref --refresh
+python src/build_panel.py              # step 5: -> data/processed/{pref_yearly,pref_panel,muni_panel}.parquet
 ```
+
+Scripts in `src/` import each other as plain modules (`import estat`), so run them as `python src/<script>.py` from the repo root.
+
+### Panel conventions (step 5, `src/build_panel.py`)
+- **Unit = 5-year period** starting at a census year t. Prefecture periods start 1980–2015 (births start in 1980); municipal periods start 1995–2015 (municipal births start in 1995).
+- **Targets**, in % of the population at t: `growth`, `natural` (births − deaths, summed over years t+1..t+5, the window that best matched population change), and `social` = growth − natural. This residual correlates 0.97 with recorded moves in and out.
+- **Features are measured at year t.** Survey-year variables carry the latest value forward for up to 5 years. Money values are expressed relative to the national level (`*_rel`, national = 100), which removes inflation.
+- **Exclusions:** Fukushima from 2010 (D1); Miyake village (13381) for 1995 and 2000 (fully evacuated after the 2000 eruption).
 
 - `config/variables.csv` decides what gets downloaded (one row per variable × level). Add a variable by adding a row with its SSDS item code. `download.py` finds the right table by searching the cached metadata.
 - `src/estat.py` is the API client. `data/raw/ssds_manifest.json` records the source table and actual year coverage for each variable.

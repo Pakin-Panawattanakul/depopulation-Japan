@@ -180,3 +180,9 @@ Agreed 2026-11-23. Revisit any of them if results suggest it.
 **Why:** wards are administrative divisions, not independent municipalities, and much municipal data (fiscal strength, for example) exists only for the whole city. Including both cities and their wards would double-count people.
 
 **Note:** Tokyo's 23 special wards (特別区) **are** separate municipalities, so keep them as individual units.
+
+### D6. Other evacuated areas: Miyake village 1995–2005 (added in step 5)
+**Decision:** drop Miyake village (三宅村, Tokyo, `13381`) for the periods starting 1995 and 2000. After the 2000 Miyakejima eruption the whole island was evacuated, so the 2000 census counted 0 people. That's the same reason as D1: the change was caused by an evacuation order, not by the factors we study.
+
+### D7. Job-openings ratio: found in SSDS (updates D3)
+`#F03103` (table `0000010206`) is the long series, 1975–2022, so no outside MHLW download is needed. Also added: `#F03302`, the share of high-school graduates taking a job in another prefecture (1975–2023). It measures young people leaving before 2000, when the university-outflow variable (D4) doesn't exist yet.
