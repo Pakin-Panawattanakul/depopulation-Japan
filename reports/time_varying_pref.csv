@@ -1,0 +1,78 @@
+level,target,period,feature,label,coef,lo,hi,shapley_r2,share_of_r2,r2,n
+pref,social,1985,income_rel,Income per taxpayer (Japan=100),0.7318,-0.254,1.3931,0.1821,0.2462,0.7397,47
+pref,social,1985,job_openings_ratio,Job-openings ratio,-0.2413,-0.8483,0.3836,0.0613,0.0829,0.7397,47
+pref,social,1985,unemployment_rate,Unemployment rate,-1.601,-2.232,-0.6242,0.149,0.2014,0.7397,47
+pref,social,1985,aging_rate,Aging rate (65+ %),-1.2543,-2.1209,-0.3724,0.1956,0.2644,0.7397,47
+pref,social,1985,log_dist_metro,Distance to nearest metro (log),0.7719,-0.6228,1.4211,0.0704,0.0952,0.7397,47
+pref,social,1985,snow_days_5y,Snow days per year,-0.9264,-1.4282,-0.2501,0.0813,0.11,0.7397,47
+pref,social,1990,income_rel,Income per taxpayer (Japan=100),0.2691,-0.6778,1.1331,0.0767,0.1894,0.405,47
+pref,social,1990,job_openings_ratio,Job-openings ratio,0.152,-0.335,0.6181,0.0445,0.1099,0.405,47
+pref,social,1990,unemployment_rate,Unemployment rate,-0.5279,-1.0994,0.0879,0.062,0.1532,0.405,47
+pref,social,1990,aging_rate,Aging rate (65+ %),-0.7539,-1.5011,-0.0273,0.1453,0.3588,0.405,47
+pref,social,1990,log_dist_metro,Distance to nearest metro (log),0.6592,-0.1652,1.1476,0.0542,0.1338,0.405,47
+pref,social,1990,snow_days_5y,Snow days per year,-0.2848,-0.6498,0.0792,0.0223,0.0551,0.405,47
+pref,social,1995,income_rel,Income per taxpayer (Japan=100),0.5342,-0.1818,1.2508,0.1668,0.52,0.3208,47
+pref,social,1995,job_openings_ratio,Job-openings ratio,0.0023,-0.4225,0.3718,0.0101,0.0314,0.3208,47
+pref,social,1995,unemployment_rate,Unemployment rate,-0.0025,-0.5621,0.5142,0.0044,0.0136,0.3208,47
+pref,social,1995,aging_rate,Aging rate (65+ %),-0.0404,-0.5371,0.4509,0.0787,0.2454,0.3208,47
+pref,social,1995,log_dist_metro,Distance to nearest metro (log),0.0786,-0.6019,0.5659,0.0543,0.1694,0.3208,47
+pref,social,1995,snow_days_5y,Snow days per year,0.0712,-0.1158,0.2937,0.0065,0.0202,0.3208,47
+pref,social,2000,income_rel,Income per taxpayer (Japan=100),0.4376,-0.3378,1.2862,0.1882,0.3107,0.6057,47
+pref,social,2000,job_openings_ratio,Job-openings ratio,0.4305,0.0474,0.822,0.0617,0.1019,0.6057,47
+pref,social,2000,unemployment_rate,Unemployment rate,0.1233,-0.3043,0.6067,0.0144,0.0238,0.6057,47
+pref,social,2000,aging_rate,Aging rate (65+ %),-0.3855,-0.8691,0.0737,0.1764,0.2912,0.6057,47
+pref,social,2000,log_dist_metro,Distance to nearest metro (log),0.0163,-0.6978,0.4381,0.1127,0.186,0.6057,47
+pref,social,2000,snow_days_5y,Snow days per year,-0.1667,-0.3537,0.0394,0.0524,0.0864,0.6057,47
+pref,social,2005,income_rel,Income per taxpayer (Japan=100),0.8052,0.0369,1.5684,0.2915,0.3724,0.7829,47
+pref,social,2005,job_openings_ratio,Job-openings ratio,0.1671,-0.1578,0.5355,0.0781,0.0998,0.7829,47
+pref,social,2005,unemployment_rate,Unemployment rate,-0.0984,-0.4589,0.2203,0.0146,0.0187,0.7829,47
+pref,social,2005,aging_rate,Aging rate (65+ %),-0.3897,-0.8563,0.0104,0.2131,0.2722,0.7829,47
+pref,social,2005,log_dist_metro,Distance to nearest metro (log),0.1731,-0.1801,0.5042,0.1259,0.1608,0.7829,47
+pref,social,2005,snow_days_5y,Snow days per year,-0.1401,-0.3238,0.0502,0.0596,0.0761,0.7829,47
+pref,social,2010,income_rel,Income per taxpayer (Japan=100),0.4815,-0.0228,1.0451,0.2233,0.3293,0.6782,46
+pref,social,2010,job_openings_ratio,Job-openings ratio,0.2709,0.009,0.4611,0.0248,0.0365,0.6782,46
+pref,social,2010,unemployment_rate,Unemployment rate,0.0581,-0.227,0.2537,0.0057,0.0084,0.6782,46
+pref,social,2010,aging_rate,Aging rate (65+ %),-0.5324,-0.7908,-0.2242,0.3162,0.4662,0.6782,46
+pref,social,2010,log_dist_metro,Distance to nearest metro (log),0.2291,-0.0676,0.5138,0.0867,0.1278,0.6782,46
+pref,social,2010,snow_days_5y,Snow days per year,0.1438,-0.0078,0.3179,0.0215,0.0317,0.6782,46
+pref,social,2015,income_rel,Income per taxpayer (Japan=100),0.6919,0.2278,1.2858,0.2997,0.3886,0.7712,46
+pref,social,2015,job_openings_ratio,Job-openings ratio,0.0651,-0.1827,0.2968,0.0174,0.0226,0.7712,46
+pref,social,2015,unemployment_rate,Unemployment rate,-0.0593,-0.4021,0.2069,0.006,0.0077,0.7712,46
+pref,social,2015,aging_rate,Aging rate (65+ %),-0.5446,-0.8155,-0.176,0.2878,0.3732,0.7712,46
+pref,social,2015,log_dist_metro,Distance to nearest metro (log),0.0915,-0.2444,0.5328,0.1293,0.1677,0.7712,46
+pref,social,2015,snow_days_5y,Snow days per year,0.0131,-0.1802,0.1829,0.031,0.0402,0.7712,46
+pref,natural,1985,aging_rate,Aging rate (65+ %),-0.7282,-0.8694,-0.5343,0.5062,0.5356,0.9451,47
+pref,natural,1985,tfr,Total fertility rate,0.5056,0.2576,0.6963,0.2249,0.238,0.9451,47
+pref,natural,1985,unmarried_f_30_34_rate,Unmarried women 30–34 (%),0.116,0.0153,0.1804,0.0376,0.0397,0.9451,47
+pref,natural,1985,income_rel,Income per taxpayer (Japan=100),0.0465,-0.0867,0.1617,0.1419,0.1502,0.9451,47
+pref,natural,1985,vacancy_rate,Vacant housing (%),-0.0474,-0.1307,0.0517,0.0345,0.0365,0.9451,47
+pref,natural,1990,aging_rate,Aging rate (65+ %),-0.9034,-1.0947,-0.6653,0.5994,0.6415,0.9343,47
+pref,natural,1990,tfr,Total fertility rate,0.4715,0.2412,0.6451,0.1298,0.1389,0.9343,47
+pref,natural,1990,unmarried_f_30_34_rate,Unmarried women 30–34 (%),0.0908,-0.018,0.1601,0.022,0.0236,0.9343,47
+pref,natural,1990,income_rel,Income per taxpayer (Japan=100),-0.0203,-0.1405,0.0876,0.1641,0.1757,0.9343,47
+pref,natural,1990,vacancy_rate,Vacant housing (%),0.0411,-0.0368,0.114,0.019,0.0203,0.9343,47
+pref,natural,1995,aging_rate,Aging rate (65+ %),-0.8871,-1.0644,-0.6269,0.6189,0.6647,0.9311,47
+pref,natural,1995,tfr,Total fertility rate,0.4815,0.2206,0.6784,0.0987,0.1061,0.9311,47
+pref,natural,1995,unmarried_f_30_34_rate,Unmarried women 30–34 (%),0.0242,-0.084,0.0975,0.0085,0.0091,0.9311,47
+pref,natural,1995,income_rel,Income per taxpayer (Japan=100),0.1604,-0.015,0.3734,0.2004,0.2152,0.9311,47
+pref,natural,1995,vacancy_rate,Vacant housing (%),0.0414,-0.0317,0.0986,0.0045,0.0049,0.9311,47
+pref,natural,2000,aging_rate,Aging rate (65+ %),-0.897,-1.0535,-0.6819,0.6487,0.687,0.9443,47
+pref,natural,2000,tfr,Total fertility rate,0.4575,0.2507,0.6149,0.087,0.0921,0.9443,47
+pref,natural,2000,unmarried_f_30_34_rate,Unmarried women 30–34 (%),0.0856,-0.0174,0.1492,0.0119,0.0126,0.9443,47
+pref,natural,2000,income_rel,Income per taxpayer (Japan=100),0.1414,-0.0085,0.3426,0.1921,0.2034,0.9443,47
+pref,natural,2000,vacancy_rate,Vacant housing (%),0.0084,-0.056,0.0701,0.0046,0.0049,0.9443,47
+pref,natural,2005,aging_rate,Aging rate (65+ %),-0.8727,-1.0335,-0.684,0.601,0.6309,0.9526,47
+pref,natural,2005,tfr,Total fertility rate,0.4692,0.311,0.6153,0.0838,0.0879,0.9526,47
+pref,natural,2005,unmarried_f_30_34_rate,Unmarried women 30–34 (%),0.1633,0.085,0.261,0.0417,0.0438,0.9526,47
+pref,natural,2005,income_rel,Income per taxpayer (Japan=100),0.2032,0.0855,0.3683,0.2065,0.2168,0.9526,47
+pref,natural,2005,vacancy_rate,Vacant housing (%),-0.0606,-0.1175,0.0028,0.0196,0.0206,0.9526,47
+pref,natural,2010,aging_rate,Aging rate (65+ %),-0.8787,-1.0601,-0.671,0.5666,0.5854,0.9678,46
+pref,natural,2010,tfr,Total fertility rate,0.4548,0.3253,0.5859,0.0884,0.0913,0.9678,46
+pref,natural,2010,unmarried_f_30_34_rate,Unmarried women 30–34 (%),0.1515,0.0729,0.2384,0.0261,0.0269,0.9678,46
+pref,natural,2010,income_rel,Income per taxpayer (Japan=100),0.2494,0.1318,0.3721,0.2063,0.2131,0.9678,46
+pref,natural,2010,vacancy_rate,Vacant housing (%),-0.0512,-0.1117,0.0339,0.0806,0.0832,0.9678,46
+pref,natural,2015,aging_rate,Aging rate (65+ %),-0.8641,-1.082,-0.6406,0.5751,0.6013,0.9564,46
+pref,natural,2015,tfr,Total fertility rate,0.401,0.2875,0.5295,0.0754,0.0788,0.9564,46
+pref,natural,2015,unmarried_f_30_34_rate,Unmarried women 30–34 (%),0.1382,0.0586,0.2532,0.0083,0.0087,0.9564,46
+pref,natural,2015,income_rel,Income per taxpayer (Japan=100),0.3033,0.1539,0.4491,0.2244,0.2346,0.9564,46
+pref,natural,2015,vacancy_rate,Vacant housing (%),-0.0232,-0.1031,0.059,0.0733,0.0766,0.9564,46

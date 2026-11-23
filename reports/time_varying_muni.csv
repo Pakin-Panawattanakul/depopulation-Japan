@@ -1,0 +1,56 @@
+level,target,period,feature,label,coef,lo,hi,shapley_r2,share_of_r2,r2,n
+muni,social,1995,aging_rate,Aging rate (65+ %),-0.8103,-1.362,-0.1831,0.0326,0.2811,0.1159,1127
+muni,social,1995,fiscal_strength,Fiscal strength index,0.313,-0.2062,0.8189,0.0195,0.1685,0.1159,1127
+muni,social,1995,income_rel,Income per taxpayer (Japan=100),0.9812,0.5182,1.3846,0.0342,0.2952,0.1159,1127
+muni,social,1995,log_population,Population size (log),0.5008,-0.0235,1.0736,0.0128,0.1106,0.1159,1127
+muni,social,1995,did_share,Urban share (DID %),-1.2376,-1.669,-0.7479,0.0143,0.1231,0.1159,1127
+muni,social,1995,unemployment_rate,Unemployment rate,0.2307,-0.0599,0.5261,0.0025,0.0215,0.1159,1127
+muni,social,2000,aging_rate,Aging rate (65+ %),-0.7598,-1.1802,-0.3555,0.053,0.2679,0.1979,1129
+muni,social,2000,fiscal_strength,Fiscal strength index,0.9423,0.4376,1.5,0.0622,0.3142,0.1979,1129
+muni,social,2000,income_rel,Income per taxpayer (Japan=100),0.5222,0.1569,0.8844,0.0288,0.1456,0.1979,1129
+muni,social,2000,log_population,Population size (log),0.3044,-0.1269,0.8249,0.0248,0.1254,0.1979,1129
+muni,social,2000,did_share,Urban share (DID %),-0.8387,-1.2494,-0.4794,0.0167,0.0842,0.1979,1129
+muni,social,2000,unemployment_rate,Unemployment rate,0.4236,0.1483,0.7181,0.0124,0.0626,0.1979,1129
+muni,social,2005,aging_rate,Aging rate (65+ %),-0.9395,-1.3026,-0.5701,0.0962,0.3132,0.3072,1658
+muni,social,2005,fiscal_strength,Fiscal strength index,0.9265,0.5968,1.2406,0.0986,0.3211,0.3072,1658
+muni,social,2005,income_rel,Income per taxpayer (Japan=100),0.1575,-0.1194,0.4277,0.0418,0.1362,0.3072,1658
+muni,social,2005,log_population,Population size (log),0.3104,0.0163,0.5922,0.0419,0.1363,0.3072,1658
+muni,social,2005,did_share,Urban share (DID %),-0.1093,-0.3176,0.0749,0.0259,0.0844,0.3072,1658
+muni,social,2005,unemployment_rate,Unemployment rate,-0.1847,-0.4016,0.0186,0.0027,0.0088,0.3072,1658
+muni,social,2010,aging_rate,Aging rate (65+ %),-0.8145,-1.1194,-0.5308,0.0785,0.3301,0.2377,1653
+muni,social,2010,fiscal_strength,Fiscal strength index,0.4785,0.0711,0.8397,0.0574,0.2413,0.2377,1653
+muni,social,2010,income_rel,Income per taxpayer (Japan=100),-0.0036,-0.2869,0.2837,0.0286,0.1204,0.2377,1653
+muni,social,2010,log_population,Population size (log),0.3103,0.0435,0.5762,0.0404,0.1699,0.2377,1653
+muni,social,2010,did_share,Urban share (DID %),0.1538,-0.0724,0.3919,0.0318,0.1337,0.2377,1653
+muni,social,2010,unemployment_rate,Unemployment rate,-0.1186,-0.2761,0.0602,0.0011,0.0045,0.2377,1653
+muni,social,2015,aging_rate,Aging rate (65+ %),-0.4702,-0.7186,-0.2417,0.0648,0.2229,0.2907,1659
+muni,social,2015,fiscal_strength,Fiscal strength index,1.0436,0.8111,1.2833,0.1077,0.3705,0.2907,1659
+muni,social,2015,income_rel,Income per taxpayer (Japan=100),0.0681,-0.1268,0.2546,0.0387,0.133,0.2907,1659
+muni,social,2015,log_population,Population size (log),-0.0271,-0.2971,0.25,0.0362,0.1244,0.2907,1659
+muni,social,2015,did_share,Urban share (DID %),0.232,0.0374,0.4368,0.042,0.1446,0.2907,1659
+muni,social,2015,unemployment_rate,Unemployment rate,0.0219,-0.15,0.1785,0.0013,0.0045,0.2907,1659
+muni,natural,1995,aging_rate,Aging rate (65+ %),-2.013,-2.1022,-1.9249,0.5569,0.6872,0.8105,1740
+muni,natural,1995,did_share,Urban share (DID %),0.0349,-0.0192,0.0914,0.0668,0.0824,0.8105,1740
+muni,natural,1995,income_rel,Income per taxpayer (Japan=100),-0.162,-0.2324,-0.0858,0.0828,0.1021,0.8105,1740
+muni,natural,1995,log_population,Population size (log),-0.0174,-0.0898,0.0562,0.0871,0.1074,0.8105,1740
+muni,natural,1995,unemployment_rate,Unemployment rate,-0.1244,-0.2015,-0.0476,0.0169,0.0209,0.8105,1740
+muni,natural,2000,aging_rate,Aging rate (65+ %),-2.1327,-2.2278,-2.0306,0.581,0.6874,0.8452,1740
+muni,natural,2000,did_share,Urban share (DID %),0.0788,0.0322,0.1354,0.0706,0.0836,0.8452,1740
+muni,natural,2000,income_rel,Income per taxpayer (Japan=100),-0.1308,-0.198,-0.0671,0.08,0.0947,0.8452,1740
+muni,natural,2000,log_population,Population size (log),-0.0321,-0.0916,0.0301,0.0936,0.1107,0.8452,1740
+muni,natural,2000,unemployment_rate,Unemployment rate,-0.1828,-0.2516,-0.1234,0.02,0.0236,0.8452,1740
+muni,natural,2005,aging_rate,Aging rate (65+ %),-2.2841,-2.3741,-2.18,0.586,0.6701,0.8745,1741
+muni,natural,2005,did_share,Urban share (DID %),0.1608,0.1017,0.2184,0.0912,0.1042,0.8745,1741
+muni,natural,2005,income_rel,Income per taxpayer (Japan=100),-0.0547,-0.1226,0.0002,0.0868,0.0992,0.8745,1741
+muni,natural,2005,log_population,Population size (log),-0.0269,-0.092,0.0422,0.1065,0.1218,0.8745,1741
+muni,natural,2005,unemployment_rate,Unemployment rate,-0.1542,-0.2067,-0.0974,0.0041,0.0047,0.8745,1741
+muni,natural,2010,aging_rate,Aging rate (65+ %),-2.4631,-2.5808,-2.3422,0.5655,0.6393,0.8846,1682
+muni,natural,2010,did_share,Urban share (DID %),0.3537,0.2857,0.4356,0.1151,0.1301,0.8846,1682
+muni,natural,2010,income_rel,Income per taxpayer (Japan=100),-0.001,-0.0779,0.0533,0.1014,0.1146,0.8846,1682
+muni,natural,2010,log_population,Population size (log),-0.1267,-0.2137,-0.0357,0.0996,0.1126,0.8846,1682
+muni,natural,2010,unemployment_rate,Unemployment rate,-0.1675,-0.2202,-0.1175,0.003,0.0034,0.8846,1682
+muni,natural,2015,aging_rate,Aging rate (65+ %),-2.5304,-2.6657,-2.4135,0.5817,0.6418,0.9065,1682
+muni,natural,2015,did_share,Urban share (DID %),0.3238,0.2551,0.3891,0.1188,0.131,0.9065,1682
+muni,natural,2015,income_rel,Income per taxpayer (Japan=100),0.0568,0.0006,0.1124,0.1052,0.116,0.9065,1682
+muni,natural,2015,log_population,Population size (log),-0.1111,-0.1973,-0.0255,0.098,0.1082,0.9065,1682
+muni,natural,2015,unemployment_rate,Unemployment rate,-0.1019,-0.1577,-0.0526,0.0027,0.003,0.9065,1682
