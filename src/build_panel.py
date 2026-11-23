@@ -7,6 +7,7 @@ Outputs (data/processed/):
     pref_yearly.parquet  wide table, one row per prefecture (and national) x year, derived rates
     pref_panel.parquet   one row per prefecture x 5-year period (1980->85 ... 2015->20)
     muni_panel.parquet   one row per municipality x 5-year period (1995->2000 ... 2015->20)
+    pref_start_2020.parquet, muni_start_2020.parquet  features at 2020, for forecasting
 
 Conventions (see docs/datasets.md for the reasons):
 - Period t->t+5 runs from the 1 Oct t population count to the 1 Oct t+5 count. Births and
@@ -61,7 +62,8 @@ def period_targets(w: pd.DataFrame, starts: list[int]) -> pd.DataFrame:
     rows = []
     for t in starts:
         p0 = pop.xs(t, level="year")
-        p1 = pop.xs(t + 5, level="year")
+        years = pop.index.get_level_values("year")
+        p1 = pop.xs(t + 5, level="year") if (t + 5) in years else pd.Series(np.nan, index=p0.index)
         yrs = range(t + 1, t + 6)
         sel = births.index.get_level_values("year").isin(yrs)
         b = births[sel].groupby(level="area_code").agg(lambda s: s.sum(min_count=5))
@@ -114,7 +116,7 @@ def build_pref() -> tuple[pd.DataFrame, pd.DataFrame]:
              "univ_outflow_share", "hs_grads_jobs_other_pref", "univ_capacity_index", "local_univ_entry_share",
              "doctors_per_100k", "fiscal_strength", "snow_days_5y", "log_population"]
     pw = w[w.area_code != NATIONAL]
-    tg = period_targets(pw, list(range(1980, 2020, 5)))
+    tg = period_targets(pw, list(range(1980, 2025, 5)))  # 2020 start = forecast rows (no target yet)
     start = pw[["area_code", "year", *feats]].rename(columns={"year": "period"})
     panel = tg.merge(start, on=["area_code", "period"], how="left")
     panel["pref"] = panel.area_code.str[:2]
@@ -124,12 +126,13 @@ def build_pref() -> tuple[pd.DataFrame, pd.DataFrame]:
     panel["univ_data_available"] = panel.univ_outflow_share.notna().astype(int)
     panel = panel[~((panel.pref == FUKUSHIMA) & (panel.period >= 2010))]  # D1
     panel["period_label"] = panel.period.astype(str) + "-" + (panel.period + 5).astype(str)
-    return yearly, panel.reset_index(drop=True)
+    panel = panel.reset_index(drop=True)
+    return yearly, panel[panel.period < 2020].reset_index(drop=True), panel[panel.period == 2020].reset_index(drop=True)
 
 
 # --------------------------------------------------------------------------- municipality
 
-def build_muni(pref_yearly: pd.DataFrame) -> pd.DataFrame:
+def build_muni(pref_yearly: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     w = wide(RAW / "ssds_muni.parquet").sort_values(["area_code", "year"]).reset_index(drop=True)
 
     # D5: keep cities/towns/villages; drop designated-city wards and the all-Tokyo-wards
@@ -154,7 +157,7 @@ def build_muni(pref_yearly: pd.DataFrame) -> pd.DataFrame:
 
     feats = ["aging_rate", "working_women_share", "income_rel", "unemployment_rate", "did_share",
              "vacancy_rate", "doctors_per_1k", "fiscal_strength", "log_population"]
-    tg = period_targets(w, list(range(1995, 2020, 5)))
+    tg = period_targets(w, list(range(1995, 2025, 5)))  # 2020 start = forecast rows
     start = w[["area_code", "year", "area_name", *feats]].rename(columns={"year": "period"})
     panel = tg.merge(start, on=["area_code", "period"], how="left")
     panel["pref"] = panel.area_code.str[:2]
@@ -164,18 +167,22 @@ def build_muni(pref_yearly: pd.DataFrame) -> pd.DataFrame:
     # Same logic as D1: Miyake village (13381) was fully evacuated after the 2000 eruption
     # (census 2000 population = 0), so drop the two periods touching 2000.
     panel = panel[~((panel.area_code == "13381") & panel.period.isin([1995, 2000]))]
-    panel = panel.dropna(subset=["growth", "natural"])
     panel["period_label"] = panel.period.astype(str) + "-" + (panel.period + 5).astype(str)
-    return panel.reset_index(drop=True)
+    future = panel[(panel.period == 2020) & (panel.pop_start > 0)].reset_index(drop=True)
+    panel = panel[panel.period < 2020].dropna(subset=["growth", "natural"])
+    return panel.reset_index(drop=True), future
 
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    yearly, pref = build_pref()
-    muni = build_muni(yearly)
+    yearly, pref, pref_2020 = build_pref()
+    muni, muni_2020 = build_muni(yearly)
     yearly.to_parquet(OUT / "pref_yearly.parquet", index=False)
     pref.to_parquet(OUT / "pref_panel.parquet", index=False)
     muni.to_parquet(OUT / "muni_panel.parquet", index=False)
+    # Start-of-period features for 2020 (targets unknown) -> used by the forecast in step 8.
+    pref_2020.to_parquet(OUT / "pref_start_2020.parquet", index=False)
+    muni_2020.to_parquet(OUT / "muni_start_2020.parquet", index=False)
 
     for name, df in [("pref_panel", pref), ("muni_panel", muni)]:
         print(f"\n{name}: {len(df):,} rows, {df.area_code.nunique()} areas, periods {sorted(df.period.unique())}")
