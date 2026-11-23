@@ -1,20 +1,11 @@
-# data handling
+# Libraries used by population_decline.ipynb (Google Colab already has all of them)
 pandas
-pyarrow         # parquet files
 numpy
-openpyxl        # read .xlsx files (ct2025.xlsx, staj2022.xlsx)
-requests        # e-Stat API
-python-dotenv   # load ESTAT_APP_ID from .env
-
-# analysis / modelling
+matplotlib
 scikit-learn
-statsmodels     # regression, ANOVA (matches course lectures)
+statsmodels
 scipy
 
-# plotting
-matplotlib
-seaborn
-
-# notebooks
+# only needed to run the notebook on your own computer
 jupyterlab
 ipykernel
