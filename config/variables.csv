@@ -1,0 +1,43 @@
+name,code,level,theme,core,description
+population,A1101,pref,target,1,Total population
+births,A4101,pref,target,1,Births
+deaths,A4200,pref,target,1,Deaths
+moves_in,A5101,pref,target,1,Moves in (Japanese nationals)
+moves_out,A5102,pref,target,1,Moves out (Japanese nationals)
+pop_65plus,A1303,pref,demography,1,Population aged 65+
+female_20_24,A120502,pref,demography,1,Women aged 20-24
+female_25_29,A120602,pref,demography,1,Women aged 25-29
+female_30_34,A120702,pref,demography,1,Women aged 30-34
+female_35_39,A120802,pref,demography,1,Women aged 35-39
+tfr,#A05203,pref,demography,0,Total fertility rate
+unmarried_f_30_34,A1601042,pref,demography,0,Unmarried women aged 30-34
+taxable_income,C120110,pref,economy,1,Taxable income (thousand yen)
+taxpayers,C120120,pref,economy,1,Number of taxpayers (income levy)
+unemployment_rate,#F01301,pref,economy,0,Unemployment rate (%)
+did_population,A1801,pref,urban,1,Population in densely inhabited districts
+vacancy_rate,#H01405,pref,housing,1,Vacant dwelling ratio (%)
+land_price_res,C5401,pref,housing,0,Residential land standard price (yen/m2)
+univ_entrants_other_pref,E470202,pref,education,1,University entrants from this prefecture's high schools going to another prefecture
+univ_entrants_total,E470205,pref,education,1,University entrants from this prefecture's high schools
+univ_capacity_index,#E0610202,pref,education,0,University capacity index
+doctors,I6100,pref,health,1,Number of doctors
+fiscal_strength,D2101,pref,finance,1,Fiscal strength index (prefectural finance)
+snow_days,B4107,pref,environment,0,Days of snowfall per year
+population,A1101,muni,target,1,Total population
+births,A4101,muni,target,1,Births
+deaths,A4200,muni,target,1,Deaths
+moves_in,A5103,muni,target,0,Moves in (2018+ only)
+moves_out,A5104,muni,target,0,Moves out (2018+ only)
+pop_65plus,A1303,muni,demography,1,Population aged 65+
+female_15_64,A130202,muni,demography,0,Women aged 15-64 (no 20-39 band at municipal level)
+taxable_income,C120110,muni,economy,1,Taxable income (thousand yen)
+taxpayers,C120120,muni,economy,1,Number of taxpayers (income levy)
+unemployment_rate,#F01301,muni,economy,0,Unemployment rate (%)
+did_population,A1801,muni,urban,1,Population in densely inhabited districts (missing = no DID)
+vacancy_rate,#H01405,muni,housing,1,Vacant dwelling ratio (%)
+land_price_res,C5401,muni,housing,0,Residential land standard price (yen/m2)
+doctors,I6100,muni,health,1,Number of doctors
+fiscal_strength,D2201,muni,finance,1,Fiscal strength index (municipal finance)
+job_openings_ratio,#F03103,pref,economy,1,Active job openings-to-applicants ratio (long series; F310301 only covers 2015+)
+hs_grads_jobs_other_pref,#F03302,pref,education,1,Share of high-school graduates taking a job in another prefecture (%)
+local_univ_entry_share,#E0940302,pref,education,0,Share of university entrants from local high schools entering a local university (%)
