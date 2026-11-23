@@ -29,8 +29,16 @@ No lint or test setup exists yet.
 ```sh
 python src/download.py                 # step 4: fetch SSDS variables -> data/raw/ssds_{pref,muni}.parquet
 python src/download.py --level pref --refresh
-python src/build_panel.py              # step 5: -> data/processed/{pref_yearly,pref_panel,muni_panel}.parquet
+python src/build_panel.py              # step 5: -> data/processed/{pref_yearly,pref_panel,muni_panel,*_start_2020}.parquet
+python src/eda.py                      # step 6: figures 01-09, reports/eda_summary.json
+python src/select_features.py          # step 7: -> config/selected_features.json (~2 min: bootstrap + RF)
+python src/models.py                   # step 8a: FE regressions + ANOVA, reads selected_features.json
+python src/forecast.py                 # step 8b: backtests + 2025/2030 forecasts
+python src/time_varying.py             # step 9: per-period Shapley R2, interaction F-tests
+python src/build_report.py             # step 10: reports/site/index.html from src/report_template.html
 ```
+
+Steps depend on earlier outputs in this order. `reports/REPORT.md` is the written summary; the numbers quoted in it and in `src/report_template.html` were copied from the generated `reports/*.md`, so update both texts if a rerun changes results. Shared feature lists and transforms live in `src/features.py`; chart styling (colour-blind-checked palette) in `src/plotstyle.py`. Published report page: https://claude.ai/artifact/Y7UpUqDroR2EqgSa1WHhDi (republish `reports/site/index.html` to update it).
 
 Scripts in `src/` import each other as plain modules (`import estat`), so run them as `python src/<script>.py` from the repo root.
 
