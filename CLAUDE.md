@@ -36,6 +36,7 @@ python src/models.py                   # step 8a: FE regressions + ANOVA, reads 
 python src/forecast.py                 # step 8b: backtests + 2025/2030 forecasts
 python src/time_varying.py             # step 9: per-period Shapley R2, interaction F-tests
 python src/build_report.py             # step 10: reports/site/index.html from src/report_template.html
+python src/make_colab_notebook.py      # notebooks/depopulation_japan_colab.ipynb: self-contained Colab version (rerun after changing src/)
 ```
 
 Steps depend on earlier outputs in this order. `reports/REPORT.md` is the written summary; the numbers quoted in it and in `src/report_template.html` were copied from the generated `reports/*.md`, so update both texts if a rerun changes results. Shared feature lists and transforms live in `src/features.py`; chart styling (colour-blind-checked palette) in `src/plotstyle.py`. Published report page: https://claude.ai/artifact/Y7UpUqDroR2EqgSa1WHhDi (republish `reports/site/index.html` to update it).

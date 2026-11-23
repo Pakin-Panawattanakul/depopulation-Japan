@@ -20,6 +20,7 @@ config/selected_features.json, figure 10.
 
 from __future__ import annotations
 
+import inspect
 import json
 
 import matplotlib.pyplot as plt
@@ -35,6 +36,9 @@ import features as F
 import plotstyle as ps
 from estat import ROOT
 
+# scikit-learn >= 1.7 takes the number of alphas as `alphas=int` (n_alphas was removed in 1.9);
+# older versions (e.g. on Google Colab) only accept `n_alphas`.
+N_ALPHAS = {"n_alphas": 60} if "n_alphas" in inspect.signature(LassoCV).parameters else {"alphas": 60}
 RNG = np.random.default_rng(42)
 N_BOOT = 300
 STABILITY_MIN = 0.6
@@ -59,7 +63,7 @@ def run(df: pd.DataFrame, feats: list[str], target: str, level: str, n_splits: i
     groups = d["area_code"].values
     cv = GroupKFold(n_splits=n_splits)
 
-    lcv = LassoCV(cv=list(cv.split(X, y, groups)), alphas=60, max_iter=20000).fit(X, y)
+    lcv = LassoCV(cv=list(cv.split(X, y, groups)), max_iter=20000, **N_ALPHAS).fit(X, y)
     alpha = lcv.alpha_
     lasso_r2 = 1 - lcv.mse_path_.mean(axis=1).min() / y.var()
 

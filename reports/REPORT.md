@@ -41,7 +41,7 @@ Main design choices (details in `docs/datasets.md`):
   The rest of Japan mirrors this.
 - **Municipalities, 2015–20:** 82% shrank, 92% had more deaths than births, and 14% lost more than 10% in five years (up from 2% in 1995–2000). Municipalities under 5,000 people had a median change of −9.4% over 5 years.
 
-## 3. What contributes most (steps 7–8, `reports/feature_selection.md`, `reports/models_explanatory.md`)
+## 3. What contributes most (steps 7–8, `reports/feature_selection.md` and `feature_selection_interpretation.md`, `reports/models_explanatory.md`)
 
 **Natural change is almost fully explained by age structure.**
 - Prefecture model, R² 0.98:
