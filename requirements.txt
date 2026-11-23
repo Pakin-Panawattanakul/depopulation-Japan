@@ -1,0 +1,20 @@
+# data handling
+pandas
+pyarrow         # parquet files
+numpy
+openpyxl        # read .xlsx files (ct2025.xlsx, staj2022.xlsx)
+requests        # e-Stat API
+python-dotenv   # load ESTAT_APP_ID from .env
+
+# analysis / modelling
+scikit-learn
+statsmodels     # regression, ANOVA (matches course lectures)
+scipy
+
+# plotting
+matplotlib
+seaborn
+
+# notebooks
+jupyterlab
+ipykernel
